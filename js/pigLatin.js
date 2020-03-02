@@ -1,6 +1,4 @@
-$(document).on("click", "#translateBtn", function(){
-    console.log("eat a dick")
+$("#translateBtn").click(function(){
     var userInput = $("#userInput").val();
     $("#translated").text(userInput);
 });
-console.log('hi')

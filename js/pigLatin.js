@@ -1,3 +1,4 @@
+// take user input and display
 $("#translateBtn").click(function(){
     let userInput = $("#inputDefault").val();
     //change input to have all lower case
@@ -6,9 +7,14 @@ $("#translateBtn").click(function(){
     let firstChar = (originalWord.charAt(0));
     console.log(firstChar);
     //isVowel
-    var vowels = ["a","e","i","o","u"];
-    if (firstChar = vowels) {
-        console.log(firstChar,vowels)
+
+    //if Vowel, then add "yay"
+
+    //if not Vowel
+        //move first character to the end
+        //add "ay"
+
+    //print translation
     $("#translated").text(originalWord);
     }
-});
+);

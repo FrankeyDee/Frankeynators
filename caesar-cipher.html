@@ -35,10 +35,76 @@
       <div class="container center">
         <h1 class="display-4">The Cae-Ciphenator</h1>
         <p class="lead">Implement a Caesar cipher, both encoding and decoding. The key is an integer from 1 to 25. This cipher rotates the letters of the alphabet (A to Z). The encoding replaces each letter with the 1st to 25th next letter in the alphabet (wrapping Z to A). So key 2 encrypts "HI" to "JK", but key 20 encrypts "HI" to "BC". This simple "monoalphabetic substitution cipher" provides almost no security, because an attacker who has the encoded message can either use frequency analysis to guess the key, or just try all 25 keys. ​
-          https://learncryptography.com/classical-encryption/caesar-cipher</p>
+          <a href="https://learncryptography.com/classical-encryption/caesar-cipher" target="_new">https://learncryptography.com/classical-encryption/caesar-cipher</a></p>
       </div>
     </div>
-
+    <!--1-26 Key-->
+    <div class="container key">
+      <div class="left_side">
+      </div>
+      <div class="key">
+        <div class="center middle">
+          <div class="form-group">
+            <label for="exampleSelect1">Key</label>
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+            </select>
+          </div>
+      </div>
+      </div>
+      <div class="right_side">
+      </div>
+    </div>
+    <!--Main-->
+    <div class="container main">
+      <!-- Plaintext -->
+      <div class="input" id="plaintext">
+        <!-- <div class="form-group"> -->
+          <label for="Plaintext">Plaintext</label>
+          <textarea class="form-control" id="input_plaintext" rows="8"></textarea>
+        <!-- </div> -->
+      </div>
+      <!-- buttons -->
+      <div class="btn-group-vertical">
+        <div class="button">
+          <button type="button" class="btn btn-primary" id="encode">Encode</button>
+        </div>
+        <div class="button">
+        <button type="button" class="btn btn-primary" id="decode">Decode</button>
+        </div>
+      </div>
+      <!-- Ciphertext -->
+      <div class="input" id="ciphertext">
+        <div class="form-group">
+          <label for="Plaintext">Plaintext</label>
+          <textarea class="form-control" id="input_plaintext" rows="8"></textarea>
+        </div>
+      </div>
+    </div>
     <!--Link JavaScript-->
     <script type="javascript" src="/js/pigLatin.js"></script>
     <!--Bootstrap JS-->

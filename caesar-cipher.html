@@ -42,11 +42,12 @@
     <div class="container key">
       <div class="left_side">
       </div>
+      <form>
       <div class="key">
         <div class="center middle">
           <div class="form-group">
             <label for="exampleSelect1">Key</label>
-            <select class="form-control" id="exampleSelect1">
+            <select class="form-control" id="keyNumber">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -74,8 +75,9 @@
               <option>25</option>
             </select>
           </div>
+        </div>
       </div>
-      </div>
+      </form>
       <div class="right_side">
       </div>
     </div>
@@ -85,7 +87,7 @@
       <div class="input" id="plaintext">
         <!-- <div class="form-group"> -->
           <label for="Plaintext">Plaintext</label>
-          <textarea class="form-control" id="input_plaintext" rows="8"></textarea>
+          <textarea class="form-control" id="input_plaintext" rows="8" name="plain_text"></textarea>
         <!-- </div> -->
       </div>
       <!-- buttons -->
@@ -100,8 +102,8 @@
       <!-- Ciphertext -->
       <div class="input" id="ciphertext">
         <div class="form-group">
-          <label for="Plaintext">Plaintext</label>
-          <textarea class="form-control" id="input_plaintext" rows="8"></textarea>
+          <label for="Ciphertext">Ciphertext</label>
+          <textarea class="form-control" id="input_ciphertext" rows="8"></textarea>
         </div>
       </div>
     </div>

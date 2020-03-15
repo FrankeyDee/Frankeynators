@@ -8,7 +8,7 @@ $("#translateBtn").click(function(){
     let firstChar = (originalWord.charAt(0));
     // game logic: if vowel, add "yay", else move firstChar to end and add "ay"
     let vowel = ["a","e","i","o","u"];
-    if ($.inArray(firstChar, vowel) != -1){
+    if ($.inArray(firstChar, vowel) <= 0){
         translation = (originalWord+"yay");
         console.log(translation);
     } else {

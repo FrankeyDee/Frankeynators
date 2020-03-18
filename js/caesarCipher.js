@@ -35,16 +35,14 @@ $(document).ready(function() {
                 let cipherKey = oldPhabet.indexOf(cipherArray[i])
 
                 let newCipherKey = (Number(cipherKey) - Number(key));
-                console.log(newCipherKey)
+
                 if (oldPhabet.includes(cipherArray[i]) === false){
                     decodedMessage += cipherArray[i]
-                } else if (newCipherKey < 25) {
-                    let inputKey = newCipherKey - 26
-                    // console.log(inputKey)
-                    decodedMessage += oldPhabet[inputKey]
-                    // console.log(decodedMessage)}
-                } else {
-                    decodedMessage -= oldPhabet[newCipherKey];
+                } else if (cipherKey < 26 && cipherKey < key) {
+                   let inputKey = (26 + newCipherKey);
+                    decodedMessage += oldPhabet[inputKey];
+                } else { 
+                    decodedMessage += oldPhabet[newCipherKey]
                     // console.log(oldPhabet[newCipherKey])
                 }
                 $("#input_plaintext").val(decodedMessage)

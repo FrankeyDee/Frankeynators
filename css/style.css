@@ -1,3 +1,31 @@
-.center{
+.center {
     text-align: center;
+}
+
+.container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.key {
+    column-count: 3;
+}
+
+.button {
+    padding: 25px;
+}
+
+.input {
+    padding: 0px;
+}
+
+#encode {
+    background-color: orange;
+}
+
+#decode {
+    background-color: limegreen;
 }

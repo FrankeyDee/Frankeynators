@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="../fe-practice-1/css/style.css">
   <link rel="stylesheet" href="../fe-practice-1/css/bootswatch.css">
-
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <title>The CaeCiphenator</title>
 </head>
   <body>
@@ -35,14 +35,81 @@
       <div class="container center">
         <h1 class="display-4">The Cae-Ciphenator</h1>
         <p class="lead">Implement a Caesar cipher, both encoding and decoding. The key is an integer from 1 to 25. This cipher rotates the letters of the alphabet (A to Z). The encoding replaces each letter with the 1st to 25th next letter in the alphabet (wrapping Z to A). So key 2 encrypts "HI" to "JK", but key 20 encrypts "HI" to "BC". This simple "monoalphabetic substitution cipher" provides almost no security, because an attacker who has the encoded message can either use frequency analysis to guess the key, or just try all 25 keys. ​
-          https://learncryptography.com/classical-encryption/caesar-cipher</p>
+          <a href="https://learncryptography.com/classical-encryption/caesar-cipher" target="_new">https://learncryptography.com/classical-encryption/caesar-cipher</a></p>
       </div>
     </div>
-
+    <!--1-26 Key-->
+    <div class="container key">
+      <div class="left_side">
+      </div>
+      <form>
+      <div class="key">
+        <div class="center middle">
+          <div class="form-group">
+            <label for="exampleSelect1">Key</label>
+            <select class="form-control" id="keyNumber">
+              <option value=1>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+              <option value=6>6</option>
+              <option value=7>7</option>
+              <option value=8>8</option>
+              <option value=9>9</option>
+              <option value=10>10</option>
+              <option value=11>11</option>
+              <option value=12>12</option>
+              <option value=13>13</option>
+              <option value=14>14</option>
+              <option value=15>15</option>
+              <option value=16>16</option>
+              <option value=17>17</option>
+              <option value=18>18</option>
+              <option value=19>19</option>
+              <option value=20>20</option>
+              <option value=21>21</option>
+              <option value=22>22</option>
+              <option value=23>23</option>
+              <option value=24>24</option>
+              <option value=25>25</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      </form>
+      <div class="right_side">
+      </div>
+    </div>
+    <!--Main-->
+    <div class="container main">
+      <!-- Plaintext -->
+      <div class="input" id="plaintext">
+        <!-- <div class="form-group"> -->
+          <label for="Plaintext">Plaintext</label>
+          <textarea class="form-control" id="input_plaintext" rows="8" name="plain_text"></textarea>
+        <!-- </div> -->
+      </div>
+      <!-- buttons -->
+      <div class="btn-group-vertical">
+        <div class="button">
+          <button type="button" class="btn btn-primary" id="encode">Encode</button>
+        </div>
+        <div class="button">
+        <button type="button" class="btn btn-primary" id="decode">Decode</button>
+        </div>
+      </div>
+      <!-- Ciphertext -->
+      <div class="input" id="ciphertext">
+        <div class="form-group">
+          <label for="Ciphertext">Ciphertext</label>
+          <textarea class="form-control" id="input_ciphertext" rows="8"></textarea>
+        </div>
+      </div>
+    </div>
     <!--Link JavaScript-->
-    <script type="javascript" src="/js/pigLatin.js"></script>
+    <script type="text/javascript" src="./js/caesarCipher.js"></script>
     <!--Bootstrap JS-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>

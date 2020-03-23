@@ -6,26 +6,27 @@ $("#translateBtn").click(function(){
     // change input to array of words
     let inputArray = inputLowerCase.split(' ')
     
-    let translation
+    let translation = ''
 
     //for loop for EACH WORD to identify 1st character of each word
     for (let i = 0; i < inputArray.length; i++) {
-        
+        let wordTranslation
         let vowel = ['a','e','i','o','u'];
-        const alpha = ["a", "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"];
+        // const alpha = ["a", "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"];
         let firstLtr = inputArray[i].charAt(0);
         let sliced = inputArray[i].slice(1);
-        let fragment = '';
 
         if (vowel.includes(firstLtr) === true) {
-            translation = inputArray[i] + 'yay'
+            wordTranslation = inputArray[i] + 'yay'
         } else {
-            translation = sliced + firstLtr + 'ay'
+            wordTranslation = sliced + firstLtr + 'ay'
         }
         
-        console.log(translation);
+        translation += wordTranslation + " "
         // let user = translation.concat(translation)
         // document.getElementById("translated").innerHTML = user
-    } console.log(translation)
+    } 
+    document.getElementById("translated").innerHTML = translation
+    console.log(translation)
     
 });
